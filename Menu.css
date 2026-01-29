@@ -1,0 +1,153 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.encabezado {
+    background-color: #3B9BAD;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.navegacion ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navegacion li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navegacion a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contenedor-principal-flexible {
+    display: flex;         
+    justify-content: left; 
+    gap: 20px;              
+    padding: 40px;          
+    flex-wrap: wrap;        
+}
+
+
+.tarjeta {
+    background: white;
+    padding: 20px;          
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 350px;       
+    text-align: center;
+    flex: 1;
+}
+
+.tarjeta h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.tarjeta_celulares {
+    background: white;
+    padding: 20px;          
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 350px;       
+    text-align: center;
+    flex: 1;
+}
+
+.tarjeta_celulares h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.tarjeta_computadoras {
+    background: white;
+    padding: 20px;          
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 350px;       
+    text-align: center;
+    flex: 1;
+}
+
+.tarjeta_computadoras h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.tarjeta_camaras {
+    background: white;
+    padding: 20px;          
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 350px;       
+    text-align: center;
+    flex: 1;
+}
+
+.tarjeta_camaras h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.tarjeta_servicios {
+    background: white;
+    padding: 20px;          
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 350px;       
+    text-align: center;
+    flex: 1;
+}
+
+.tarjeta_servicios h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.tarjeta_servicios p {
+    margin: 0;
+}
+
+.tarjeta img,
+.tarjeta_celulares img,
+.tarjeta_computadoras img,
+.tarjeta_camaras img,
+.tarjeta_servicios img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Efecto hover para tarjetas */
+.tarjeta, .tarjeta_celulares, .tarjeta_computadoras, .tarjeta_camaras, .tarjeta_servicios {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    will-change: transform;
+}
+.tarjeta:hover, .tarjeta_celulares:hover, .tarjeta_computadoras:hover, .tarjeta_camaras:hover, .tarjeta_servicios:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+    cursor: pointer;
+}
+
+.pie-pagina {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: #bbb;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
