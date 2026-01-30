@@ -11,21 +11,47 @@ body {
 }
 
 header {
+    background-color: #ca6161;
     text-align: center;
-    padding: clamp(120px, 20vw, 120px);
-    background-color: #18BAB2;
+    width: 100%;
+}
+
+.head-title {
+    padding: 60px 20px;
     color: #000;
 }
 
-header h3 {
-    font-size: clamp(4.2rem, 4.5vw, 3rem);
-    font-weight: 500;
+.head-title h3 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 600;
 }
 
-header p {
-    font-size: clamp(1.5rem, 2vw, 1.0rem);
-    font-weight: 500;
+.navegacion {
+    background-color: #d87c7c;
+    padding: 15px 0;
+    border-top: 1px solid rgba(0,0,0,0.1);
 }
+
+.navegacion ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.navegacion a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.navegacion a:hover {
+    color: #000;
+}
+
 .camara_contenedor {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
@@ -36,8 +62,6 @@ header p {
     align-items: start;
 }
 
-
-/* ITEM */
 .camara_item {
     display: flex;
     flex-direction: column;
@@ -46,25 +70,26 @@ header p {
     border-radius: clamp(6px, 1vw, 10px);
     background: #fff;
     box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* TITULO */
+.camara_item:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
 .camara_item h3 {
     margin: clamp(10px, 2.2vw, 24px) 0;
     font-size: clamp(1.2rem, 1.6vw, 1.6rem);
     text-align: center;
 }
 
-
-/* LISTA */
 .camara_item ul {
     margin-top: clamp(6px, 1vw, 10px);
     padding-left: clamp(18px, 2vw, 24px);
     font-size: clamp(1rem, 1.2vw, 1.15rem);
 }
 
-
-/* CONTENEDOR IMAGEN */
 .img-container {
     width: clamp(80px, 10vw, 120px);
     height: clamp(45px, 7vw, 80px);
@@ -77,7 +102,6 @@ header p {
     background: #fff;
 }
 
-/* IMAGEN */
 .img-container img {
     width: 100%;
     height: 100%;
@@ -85,42 +109,8 @@ header p {
     display: block;
 }
 
-/* IMÁGENES GENERALES */
 .camara_contenedor img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
 }
-
-.camara_item {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.camara_item:hover {
-    transform: translateY(-8px) scale(1.03);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-}
-
-.encabezado {
-    background-color: #3B9BAD;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-.navegacion ul {
-    list-style: none;
-    padding: 0;
-}
-
-.navegacion li {
-    display: inline;
-    margin: 0 15px;
-}
-
-.navegacion a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
