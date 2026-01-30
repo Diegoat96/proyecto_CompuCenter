@@ -13,20 +13,40 @@
     padding: 25px;
 }
 
-/* CONTENEDOR HORIZONTAL */
+/* MENÚ */
+.menu {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #00bcd4;
+}
+
+/* CONTENEDOR */
 .contenedor {
     display: flex;
     justify-content: center;
     gap: 35px;
     padding: 50px;
-    flex-wrap: wrap;  /* 🔑 se adapta a pantallas pequeñas */
+    flex-wrap: wrap;
 }
 
-/* CARTA GRANDE Y ADAPTABLE */
+/* CARTA */
 .carta {
     display: flex;
     flex-direction: column;
-    width: 400px;          
+    width: 400px;
     background: white;
     border-radius: 18px;
     overflow: hidden;
@@ -35,16 +55,15 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* EFECTO MOUSE */
 .carta:hover {
     transform: translateY(-12px);
     box-shadow: 0 25px 40px rgba(0,0,0,0.35);
 }
 
-/* IMAGEN ADAPTABLE */
+/* IMAGEN */
 .carta img {
     width: 100%;
-    height: auto;        /* 🔑 se ajusta sola */
+    height: auto;
     object-fit: cover;
 }
 
@@ -54,11 +73,14 @@
     font-size: 22px;
 }
 
-.carta p {
+.carta ul {
+    list-style: none;
     padding: 0 22px 25px;
-    color: #555;
-    font-size: 16px;
-    line-height: 1.5;
 }
 
-
+.carta ul li {
+    padding: 6px 0;
+    font-size: 15px;
+    color: #444;
+    border-bottom: 1px solid #eee;
+}
