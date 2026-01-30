@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+.header {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* CONTENEDOR HORIZONTAL */
+.contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    padding: 50px;
+    flex-wrap: wrap;  /* 🔑 se adapta a pantallas pequeñas */
+}
+
+/* CARTA GRANDE Y ADAPTABLE */
+.carta {
+    display: flex;
+    flex-direction: column;
+    width: 400px;          
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* EFECTO MOUSE */
+.carta:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 25px 40px rgba(0,0,0,0.35);
+}
+
+/* IMAGEN ADAPTABLE */
+.carta img {
+    width: 100%;
+    height: auto;        /* 🔑 se ajusta sola */
+    object-fit: cover;
+}
+
+/* TEXTO */
+.carta h2 {
+    margin: 20px 0 12px;
+    font-size: 22px;
+}
+
+.carta p {
+    padding: 0 22px 25px;
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
