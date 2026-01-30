@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios | CompuCenter</title>
+    <link rel="stylesheet" href="Servicios.css">
+</head>
+<body>
+
+<section class="contenedor-servicios">
+
+    <h1>Nuestros Servicios</h1>
+    <p class="descripcion-general">
+        Explora nuestros servicios y solicita el que mejor se adapte a tus necesidades.
+    </p>
+
+    <div class="grid-servicios">
+
+        <!-- Servicio 1 Mantenimiento de Equipos-->
+        <div class="servicio">
+            <img src="https://compuweb.com.gt/wp-content/uploads/2021/07/repa-laptop.jpg" alt="Mantenimiento de equipos">
+
+            <h2>Mantenimiento de Equipos</h2>
+            <p class="resumen">
+                Mantén tus equipos rápidos, seguros y funcionando como nuevos.
+            </p>
+
+            <button class="btn-detalle" onclick="toggleDetalle(this)">
+                Ver más detalles
+            </button>
+
+            <div class="detalle-servicio">
+                <ul>
+                    <li>Limpieza interna y externa</li>
+                    <li>Diagnóstico de hardware y software</li>
+                    <li>Optimización del sistema</li>
+                    <li>Instalación de programas</li>
+                </ul>
+
+                <form onsubmit="enviarFormulario(event,this)">
+                    <div class="campo">
+                        <input type="text" required placeholder=" ">
+                        <label>Nombre completo</label>
+                    </div>
+
+                    <div class="campo">
+                        <input type="email" required placeholder=" ">
+                        <label>Correo electrónico</label>
+                    </div>
+
+                    <div class="campo">
+                        <input type="tel" required placeholder=" ">
+                        <label>Teléfono</label>
+                    </div>
+
+                    <div class="campo">
+                        <textarea required placeholder=" "></textarea>
+                        <label>Describe tu necesidad</label>
+                    </div>
+
+                    <button type="submit">Solicitar servicio</button>
+                    <div class="mensaje-exito">Solicitud enviada correctamente ✅</div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Servicio 2 Redes y Conectividad-->
+        <div class="servicio">
+            <img src="https://valledelmiroblog.wordpress.com/wp-content/uploads/2018/05/tecnico-redes.jpg" alt="Redes y conectividad">
+
+            <h2>Redes y Conectividad</h2>
+            <p class="resumen">
+                Conecta tu hogar o empresa con redes rápidas, estables y seguras.
+            </p>
+
+            <button class="btn-detalle" onclick="toggleDetalle(this)">
+                Ver más detalles
+            </button>
+
+            <div class="detalle-servicio">
+                <ul>
+                    <li>Redes alámbricas e inalámbricas</li>
+                    <li>Configuración de routers</li>
+                    <li>Seguridad de red</li>
+                    <li>Soporte técnico</li>
+                </ul>
+
+                <form onsubmit="enviarFormulario(event,this)">
+                    <div class="campo">
+                        <input type="text" required placeholder=" ">
+                        <label>Nombre completo</label>
+                    </div>
+
+                    <div class="campo">
+                        <input type="email" required placeholder=" ">
+                        <label>Correo electrónico</label>
+                    </div>
+
+                    <div class="campo">
+                        <input type="tel" required placeholder=" ">
+                        <label>Teléfono</label>
+                    </div>
+
+                    <div class="campo">
+                        <textarea required placeholder=" "></textarea>
+                        <label>Describe tu necesidad</label>
+                    </div>
+
+                    <button type="submit">Solicitar servicio</button>
+                    <div class="mensaje-exito">Solicitud enviada correctamente ✅</div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Servicio 3 Sistemas de Seguridad-->
+        <div class="servicio">
+            <img src="https://www.inseintseguridad.com/wp-content/uploads/2023/04/mantenimiento-alarmas-y-camaras-seguridad.jpg" alt="Sistemas de seguridad">
+
+            <h2>Sistemas de Seguridad</h2>
+            <p class="resumen">
+                Protege lo que más importa con tecnología de vigilancia confiable.
+            </p>
+
+            <button class="btn-detalle" onclick="toggleDetalle(this)">
+                Ver más detalles
+            </button>
+
+            <div class="detalle-servicio">
+                <ul>
+                    <li>Instalación de cámaras de seguridad</li>
+                    <li>Sistemas de alarma</li>
+                    <li>Monitoreo y mantenimiento</li>
+                    <li>Asesoría personalizada</li>
+                </ul>
+
+                <form onsubmit="enviarFormulario(event,this)">
+                    <div class="campo">
+                        <input type="text" required placeholder=" ">
+                        <label>Nombre completo</label>
+                    </div>
+
+                    <div class="campo">
+                        <input type="email" required placeholder=" ">
+                        <label>Correo electrónico</label>
+                    </div>
+
+                    <div class="campo">
+                        <input type="tel" required placeholder=" ">
+                        <label>Teléfono</label>
+                    </div>
+
+                    <div class="campo">
+                        <textarea required placeholder=" "></textarea>
+                        <label>Describe tu necesidad</label>
+                    </div>
+
+                    <button type="submit">Solicitar servicio</button>
+                    <div class="mensaje-exito">Solicitud enviada correctamente ✅</div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Servicio 4 Soluciones Tecnológicas-->
+        <div class="servicio">
+            <img src="https://dynamicsolutions.com.co/wp-content/uploads/2024/03/Licencias3.jpg" alt="Soluciones tecnológicas">
+
+            <h2>Soluciones Tecnológicas</h2>
+            <p class="resumen">
+                Optimiza tu negocio con soluciones tecnológicas modernas y eficientes.
+            </p>
+
+            <button class="btn-detalle" onclick="toggleDetalle(this)">
+                Ver más detalles
+            </button>
+
+            <div class="detalle-servicio">
+                <ul>
+                    <li>Soluciones de impresión</li>
+                    <li>Telefonía empresarial</li>
+                    <li>Respaldo de energía (UPS)</li>
+                    <li>Licencias de software</li>
+                </ul>
+
+                <form onsubmit="enviarFormulario(event,this)">
+                    <div class="campo">
+                        <input type="text" required placeholder=" ">
+                        <label>Nombre completo</label>
+                    </div>
+
+                    <div class="campo">
+                        <input type="email" required placeholder=" ">
+                        <label>Correo electrónico</label>
+                    </div>
+
+                    <div class="campo">
+                        <input type="tel" required placeholder=" ">
+                        <label>Teléfono</label>
+                    </div>
+
+                    <div class="campo">
+                        <textarea required placeholder=" "></textarea>
+                        <label>Describe tu necesidad</label>
+                    </div>
+
+                    <button type="submit">Solicitar servicio</button>
+                    <div class="mensaje-exito">Solicitud enviada correctamente ✅</div>
+                </form>
+            </div>
+        </div>
+        <!-- Servicio 5 Soporte Técnico Especializado-->
+    <div class="servicio">
+    <img src="https://fixit-up.net/wp-content/uploads/2023/06/soporte-tecnico-remoto-en-el-peru.jpg" alt="Soporte técnico">
+
+    <h2>Soporte Técnico Especializado</h2>
+    <p class="resumen">
+        Solucionamos tus problemas tecnológicos de forma rápida, segura y eficiente.
+    </p>
+
+    <button class="btn-detalle" onclick="toggleDetalle(this)">
+        Ver más detalles
+    </button>
+
+    <div class="detalle-servicio">
+        <ul>
+            <li>Soporte remoto y presencial</li>
+            <li>Solución de errores del sistema</li>
+            <li>Asistencia técnica inmediata</li>
+            <li>Acompañamiento profesional</li>
+        </ul>
+
+        <form onsubmit="enviarFormulario(event,this)">
+            <div class="campo">
+                <input type="text" required placeholder=" ">
+                <label>Nombre completo</label>
+            </div>
+
+            <div class="campo">
+                <input type="email" required placeholder=" ">
+                <label>Correo electrónico</label>
+            </div>
+
+            <div class="campo">
+                <input type="tel" required placeholder=" ">
+                <label>Teléfono</label>
+            </div>
+
+            <div class="campo">
+                <textarea required placeholder=" "></textarea>
+                <label>Describe tu necesidad</label>
+            </div>
+
+            <button type="submit">Solicitar servicio</button>
+            <div class="mensaje-exito">Solicitud enviada correctamente ✅</div>
+        </form>
+    </div>
+</div>
+</div>
+</section>
+
+<script>
+function toggleDetalle(boton){
+    const tarjeta = boton.closest(".servicio");
+    const detalle = tarjeta.querySelector(".detalle-servicio");
+
+    document.querySelectorAll(".detalle-servicio").forEach(d => {
+        if(d !== detalle){
+            d.classList.remove("activo");
+            d.closest(".servicio").querySelector(".btn-detalle").textContent = "Ver más detalles";
+        }
+    });
+
+    detalle.classList.toggle("activo");
+    boton.textContent = detalle.classList.contains("activo")
+        ? "Ocultar detalles"
+        : "Ver más detalles";
+}
+
+function enviarFormulario(e,form){
+    e.preventDefault();
+    const mensaje = form.querySelector(".mensaje-exito");
+    mensaje.style.display = "block";
+    form.reset();
+
+    setTimeout(() => {
+        mensaje.style.display = "none";
+    }, 4000);
+}
+</script>
+
+</body>
+</html>
