@@ -84,3 +84,26 @@
     color: #444;
     border-bottom: 1px solid #eee;
 }
+
+.encabezado {
+    background-color: #3B9BAD;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.navegacion ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navegacion li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navegacion a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}

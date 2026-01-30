@@ -101,4 +101,26 @@ header p {
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
+.encabezado {
+    background-color: #3B9BAD;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.navegacion ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navegacion li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navegacion a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
 
